@@ -1,156 +1,125 @@
-body {
-	background-color:  #BDA66C;
-	margin: 0px;
-	padding: 20px 0px;
-	font: 11px Verdana, Geneva, sans-serif;
-	color: #282828;	
+#wrap{width: 100%;}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#header a h1 {
+    font-size: 57px;
+    font-weight: bold;
+    margin-right: 48px;
+    color: red;
+}
+#header ul {
+    display: flex;
+    width: 80%;
+}
+#header ul li a{
+    font-size: 22px;
+    margin-right: 35px;
+    color: white;
+}
+#header div{
+    float: left;
+}
+#header div a {
+    color: white;
+    font-size: 22px;
+    margin-left: 450px;
+}
+#header div a:first-child {
 }
 
-/********************** LayOut **********************/
+#main_img{
+    float: left;
+    width: 100%;height: 968px;
+}
+#main_img video{
+    width: 100%;height: 968px ;
+    object-fit: cover;}
 
-#container
-{
-	width: 750px;
-	margin: 0 auto;
-	padding: 0px;	
+#contents{
+    float: left;
+    width: 100%;height: 2500px;
+    background-color: rgb(25, 169, 169);
 }
 
-#main {	
-	background-color: #F8FCFF;
-	width: 750px;
-	height: auto; 
+#site{
+    float: left;
+    width: 100%;height: 180px;
+    background-color: blueviolet;
 }
-#main #content_left {
-float:left;
-padding:0 30px 30px 30px;
-width: 425px;
-height:auto;
+#site ul{
+    margin: 0 auto;
+    width: 1000px; height: 180px;
+    background-color:brown;
 }
-#main #content_right{
-float:left;
-padding:5px;
-width: 220px;
-height:auto;
-}
-
-#footer {
-	clear: both;
-	width: 750px;
-	margin: 20px auto;
-	padding: 10px 0;
-	background-color: #99633F;
+#site li{
+    float: left;
+    width: 230px;height: 120px;
+    background-color: bisque;
+    border-radius: 15%;
+    cursor: pointer;
+    margin: 28px 0 0 15px;
 }
 
-#footer p {
-	margin: 0;
-	padding: 0;
-	text-transform: lowercase;
-	text-align: center;
-	color:#FFFFFF;
-	
+#works{
+    margin:30px 0 0 300px;
+    background-color: aqua;
+    float: left;
+    width: 1300px;height: 1300px;
+    display: none;
+}
+#works > div{
+    margin-left: 50px;
+}
+#netflix{
+    float: left;
+    margin: 20px 0 0 140px;
 }
 
-
-.item {
-
-    border-bottom:1px #999999 dashed;
+#netflix > div{
+    margin:20px 10px;    
+    float: left;
+}
+#netflix .n1_1{
+    float: left;
+}
+#netflix img{
+    width: 500px; height: 600px;
 }
 
-
-/********************** navi**********************/
-#navigation ul
-{
-	padding: 0px;
-
-
-	width: 750px;
-	float: left;
-	margin: 0 0 10px;
-	list-style-type: none;
-	background-color: #90BA2C;
+#enter{
+    font-size: 30px;
+    margin: 0 auto;
+    width: 1280px; height: 1300px;
+    background-color: blanchedalmond;
+}
+#enter >div{
+    margin-top: 55px;
+    width: 100%; height: 200px;
+}
+#enter ul{
+    margin: 0 auto;
+}
+#enter li{
+    float: left;
+    width: 220px;height: 150px;
+    background-color: rgb(33, 27, 19);
+    border-radius: 15%;
+    margin-left: 33px;
+    margin-top: 35px;
 }
 
-#navigation li { float: left; }
-
-#navigation a:link,
-#navigation a:visited
-{
-	float: left;
-	display: block;
-	color: #ffffff;
-	padding: 5px 10px;
-	border-bottom-width: 0;
-	text-decoration:none;
-}
-
-#navigation a:hover,
-#navigation a:active
-{
-	color: #ffffff;
-	background-color: #485573;
-}
-
-/**********************content**********************/
-#head {
-width: 750px;
-margin : 0;
-padding : 0;
-height : 120px;
-background : url(images/header.jpg) ;
-border-bottom : 2px solid #fff;
-}
-#head h1 {
-font-family:Tahoma; font-size:36px;  font-weight:bold; line-height:50px; margin:0px; padding:0px;
-}
-#head h1 a {
-	color:#FFFFFF;
-	display:block;
-	text-decoration:none;
-	padding:30px 0 0 30px;
-}
-#content_left p{
-font-size:11px;
-text-indent:1em;
-text-align:justify;
-line-height:18px;
-}
-
-img.pic_left{
-float:left;
-padding:5px;
-margin:0 15px 8px 8px;
-border:1px  #CCCCCC solid;
-}
-
-img.pic_right{
-float:right;
-padding:5px;
-margin:0 8px 8px 15px;
-border:1px  #CCCCCC solid;
-}
-.th_thum{
-	float:right;
-	padding:5px;
-	margin:0 8px 8px 8px;
-	border:1px  #CCCCCC solid;
-}
-
-h3{
-font-size:14px;
-color: #003366;
-}
-h4{
-font-size:13px;
-padding:12px;
-margin:0px;
-color: #003366;
-border-bottom:1px #999999 dashed;
-}
-
-.article { margin-bottom:20px;}
-
-
-#rot {  
-    -webkit-transform: rotate(10deg)  translateX(10px); ;
-    -moz-transform:rotate(10deg) translateX(10px);
+#footer{
+    width: 100%;height: 300px;
+    background-color: blanchedalmond;
 }
